@@ -7,18 +7,17 @@ import ReportTable from '../components/ReportTable';
 import CreateForm from '../components/CreateForm';
 
 export default function Home() {
-  const [locations, setLocations] = useState([]);
+  const [cookieStands, setCookieStands] = useState([]);
 
-  function questionAskedHandler(e) {
+  function cookieStandHandler(e) {
     e.preventDefault();
     const location = {
       name: e.target.locationName.value,
       minCustomers: e.target.minCustomers.value,
       maxCustomers: e.target.maxCustomers.value,
       avgCookies: e.target.avgCookies.value,
-      id: locations.length,
     };
-    setLocations([...locations, location]);
+    setCookieStands([...cookieStands, newCookieStand]);
   }
 
   return (
@@ -28,8 +27,8 @@ export default function Home() {
       <Header />
 
       <main className=''>
-        <CreateForm questionAskedHandler={questionAskedHandler} />
-        <ReportTable locations={locations} />
+        <CreateForm questionAskedHandler={cookieStandHandler} />
+        <ReportTable locations={cookieStands} />
       </main>
 
       <Footer />

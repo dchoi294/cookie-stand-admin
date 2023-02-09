@@ -1,8 +1,8 @@
-export default function CreateForm({ questionAskedHandler }) {
+export default function CreateForm({ cookieStandHandler }) {
   return (
     <form
       className='w-1/2 p-2 mx-auto my-4 bg-green-400'
-      onSubmit={questionAskedHandler}
+      onSubmit={cookieStandHandler}
     >
       <h2 className='text-4xl text-center'>Create Cookie Stand</h2>
       <div className='flex justify-around p-3 my-4'>
