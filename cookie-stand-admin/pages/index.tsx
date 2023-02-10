@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import ReportTable from '../components/ReportTable';
 import CreateForm from '../components/CreateForm';
 
+
 export default function Home() {
   const [cookieStands, setCookieStands] = useState([]);
 
@@ -27,7 +28,7 @@ export default function Home() {
       <Header />
 
       <main className=''>
-        <CreateForm questionAskedHandler={cookieStandHandler} />
+        <CreateForm cookieStandHandler={cookieStandHandler} />
         <ReportTable locations={cookieStands} />
       </main>
 
