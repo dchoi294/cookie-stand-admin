@@ -8,6 +8,10 @@ Author: Don Choi
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Links
+
+[Deployed Site](https://cookie-stand-admin-umber.vercel.app/)
+
 ## Setup
 
 Install required dependencies:
